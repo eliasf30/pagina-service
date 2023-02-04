@@ -27,15 +27,15 @@
     color: aliceblue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.8em;
-    font-weight: 1000;
+    
     user-select: none;
 }
 @media (max-width: 900px){
     
     
     .hero_div{
-   
-   
+    background-position: 25%;
+    background-size: cover;
     height: 75vh;
     
 }
@@ -45,7 +45,13 @@
         
     
     }
-
+    .hero_h2{
+        color: aliceblue;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.8em;
+       
+        user-select: none;
+    }
 
 
 

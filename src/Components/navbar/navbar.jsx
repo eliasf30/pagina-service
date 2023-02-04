@@ -45,16 +45,16 @@ export default function Navbar() {
             <div className="ul_div">
                 <ul>
                     <Link smooth={true} duration={500} to="inicio">
-                        <button onClick={() => UseSection("Inicio")} className="navbar_Button" disabled={Section == "Inicio"}>Inicio</button>
+                        <button onClick={() => UseSection("Inicio")} className="navbar_Button" disabled={Section === "Inicio"}>Inicio</button>
                     </Link>
                     <Link to="About" offset={-105} duration={500} smooth={true} >
-                        <button onClick={() => UseSection("Nosotros")} className="navbar_Button" disabled={Section == "Nosotros"}>Nosotros</button>
+                        <button onClick={() => UseSection("Nosotros")} className="navbar_Button" disabled={Section === "Nosotros"}>Nosotros</button>
                     </Link>
                     <Link to="servicios" offset={-105} duration={500} smooth={true} >
-                        <button onClick={() => UseSection("Servicios")} className="navbar_Button" disabled={Section == "Servicios"}>Servicios</button>
+                        <button onClick={() => UseSection("Servicios")} className="navbar_Button" disabled={Section === "Servicios"}>Servicios</button>
                     </Link>
                     <Link to="contactos" duration={500} smooth={true} >
-                        <button onClick={() => UseSection("Contactos")} className="navbar_Button" disabled={Section == "Contactos"}>Contactos</button>
+                        <button onClick={() => UseSection("Contactos")} className="navbar_Button" disabled={Section === "Contactos"}>Contactos</button>
                     </Link>
                 </ul>
 
@@ -74,8 +74,36 @@ export default function Navbar() {
                     <BsWhatsapp className="whatsappIcon" />
 
                 </a>
+
+
+                {
+                    (toggleMenu === "open") ?
+
+                        <div className="reponsive_menu">
+                            <ul className="reponsive_ul">
+                                <Link smooth={true} duration={500} to="inicio">
+                                    <button onClick={() => UseSection("Inicio")} className="navbar_Button" disabled={Section === "Inicio"}>Inicio</button>
+                                </Link>
+                                <Link to="About" offset={-105} duration={500} smooth={true} >
+                                    <button onClick={() => UseSection("Nosotros")} className="navbar_Button" disabled={Section === "Nosotros"}>Nosotros</button>
+                                </Link>
+                                <Link to="servicios" offset={-105} duration={500} smooth={true} >
+                                    <button onClick={() => UseSection("Servicios")} className="navbar_Button" disabled={Section === "Servicios"}>Servicios</button>
+                                </Link>
+                                <Link to="contactos" duration={500} smooth={true} >
+                                    <button onClick={() => UseSection("Contactos")} className="navbar_Button" disabled={Section === "Contactos"}>Contactos</button>
+                                </Link>
+                            </ul>
+                        </div>
+
+                        :
+
+                        ""
+                }
+
+
+
             </div>
         </div>
-
     )
 }
