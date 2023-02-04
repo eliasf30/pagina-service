@@ -30,3 +30,23 @@
     font-weight: 1000;
     user-select: none;
 }
+@media (max-width: 900px){
+    
+    
+    .hero_div{
+   
+   
+    height: 75vh;
+    
+}
+    .h2_div{
+        
+        width: 90%;
+        
+    
+    }
+
+
+
+
+}

@@ -71,16 +71,31 @@
 
 
 @media (max-width: 900px){
-    .tech_card{
+    .card{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 40%;
-        user-select: none;
-        height: 15%;
-        margin: 5%;
+        
+        margin: 7%;
+        height: 9%;
+        
        
+    }
+
+    .tech_card{
+        
+        width: 90%;
+        height: 50%;
+      
+       
+        
+    }
+    .card:hover{
+      
+        
+        
+        padding-right: 70%;
+       
+            
+            
         
     }
 }

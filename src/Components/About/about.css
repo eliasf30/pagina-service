@@ -5,7 +5,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    background:linear-gradient(180deg, #E3DCD5 0%, #BDAEA6, #FCFCFC); 
+    background-color: rgb(177, 177, 177); 
     flex-direction: row;
    
     
