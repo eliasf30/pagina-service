@@ -31,7 +31,7 @@ export const technologies = [
         ID:4,
         title:"Albañilería",
         image: albañil,
-        description:[]
+        description:["Albañileria en general"]
     },
     {
         ID:5,
